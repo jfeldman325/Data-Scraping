@@ -3,7 +3,9 @@ require 'highline'
 require 'bcrypt'
 
 class Login
-
+  #A simple class that handles basic login with encrypted storage
+  #this oculd be used with a database to create a robust login system
+  
   def self.add_user
     @login=Watcher.authenticate  #must be admin to add user
     if @login[0].is_admin==true
